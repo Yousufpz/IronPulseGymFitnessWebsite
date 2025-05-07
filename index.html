@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Pulse Gym Fitness - Transform Your Body</title>
+    <link rel="icon" href="https://lh3.googleusercontent.com/p/AF1QipNqSZVw99TWhjvGRIotRAKhje-e7iRRn6sHo3hm=s423-k-no" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+        
+        :root {
+            --primary: #e53e3e;
+            --secondary: #1a202c;
+            --accent: #f6ad55;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .title-font {
+            font-family: 'Bebas Neue', cursive;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .trainer-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .service-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover .service-icon {
+            transform: rotate(15deg) scale(1.2);
+            color: var(--accent);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-dumbbell text-red-500 text-2xl"></i>
+                <a href="#" class="title-font text-2xl md:text-3xl">IRON <span class="text-red-500">+</span> GYM</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="hover:text-red-500 transition">Home</a>
+                <a href="#services" class="hover:text-red-500 transition">Services</a>
+                <a href="#packages" class="hover:text-red-500 transition">Packages</a>
+                <a href="#trainer" class="hover:text-red-500 transition">Trainer</a>
+                <a href="#contact" class="hover:text-red-500 transition">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen flex items-center justify-center text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="title-font text-5xl md:text-7xl mb-6">FORGE YOUR <span class="text-red-500">IRON</span> WILL</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Where ordinary people become extraordinary through sweat, discipline, and determination.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#packages" class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-bold transition duration-300 transform hover:scale-105">JOIN NOW</a>
+                <a href="#services" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg font-bold transition duration-300 transform hover:scale-105">OUR SERVICES</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="trainer" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="title-font text-4xl md:text-5xl text-center mb-4">MEET OUR <span class="text-red-500">HEAD TRAINER</span></h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Learn from the best in the fitness industry.</p>
+            
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+                <div class="trainer-card w-full md:w-1/3 lg:w-1/4 overflow-hidden rounded-lg shadow-xl transition duration-300">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipM0dVPOanLKukJW7mPShI3ytdxgSLn4SIkUKdP3=s423-k-no" alt="Beeru Pal" class="w-full h-auto object-cover">
+                </div>
+                
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-2">Beeru Pal</h3>
+                    <span class="text-red-500 font-semibold">Certified Fitness Trainer & Nutritionist</span>
+                    
+                    <p class="my-4 text-gray-600">
+                        With over 10 years of experience in the fitness industry, Beru has helped hundreds of clients transform their bodies and lives. His unique approach combines functional training with nutritional guidance for optimal results.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mt-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-award text-red-500 mr-2"></i>
+                            <span>ISSA Certified</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-award text-red-500 mr-2"></i>
+                            <span>ACE Certified</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-dumbbell text-red-500 mr-2"></i>
+                            <span>Strength Training</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-heartbeat text-red-500 mr-2"></i>
+                            <span>Functional Fitness</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 flex space-x-4">
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-pink-600 hover:bg-pink-700 text-white p-3 rounded-full">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-blue-400 hover:bg-blue-500 text-white p-3 rounded-full">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="transform transition-duration-500 hover:scale-110">
+                    <div class="text-4xl font-bold text-red-500 mb-2 animate-[bounce_2s_ease-in-out_infinite]">500+</div>
+                    <div class="text-gray-300">Members</div>
+                </div>
+                <div class="transform transition-duration-500 hover:scale-110">
+                    <div class="text-4xl font-bold text-red-500 mb-2 animate-[bounce_2s_ease-in-out_infinite_200ms]">10+</div>
+                    <div class="text-gray-300">Trainers</div>
+                </div>
+                <div class="transform transition-duration-500 hover:scale-110">
+                    <div class="text-4xl font-bold text-red-500 mb-2 animate-[bounce_2s_ease-in-out_infinite_400ms]">15+</div>
+                    <div class="text-gray-300">Classes</div>
+                </div>
+                <div class="transform transition-duration-500 hover:scale-110">
+                    <div class="text-4xl font-bold text-red-500 mb-2 animate-[bounce_2s_ease-in-out_infinite_600ms]">24/7</div>
+                    <div class="text-gray-300">Open</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="title-font text-4xl md:text-5xl text-center mb-4">OUR <span class="text-red-500">SERVICES</span></h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">We offer a wide range of fitness programs to cater to all your workout needs.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300">
+                    <div class="service-icon text-red-500 text-4xl mb-4">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Zumba</h3>
+                    <p class="text-gray-600">High-energy dance workout that combines Latin rhythms with cardiovascular exercise.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300">
+                    <div class="service-icon text-red-500 text-4xl mb-4">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Yoga</h3>
+                    <p class="text-gray-600">Improve flexibility, strength and balance through physical postures, breathing techniques and meditation.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300">
+                    <div class="service-icon text-red-500 text-4xl mb-4">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Aerobics</h3>
+                    <p class="text-gray-600">Cardiovascular workout that improves your heart health while burning calories.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300">
+                    <div class="service-icon text-red-500 text-4xl mb-4">
+                        <i class="fas fa-fist-raised"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Self Defense</h3>
+                    <p class="text-gray-600">Learn practical techniques to protect yourself in any situation while improving fitness.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300">
+                    <div class="service-icon text-red-500 text-4xl mb-4">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Strength Training</h3>
+                    <p class="text-gray-600">Build muscle, increase strength and boost metabolism with our expert-guided weight training.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-gray-50 rounded-lg p-6 shadow-md hover:shadow-xl transition duration-300">
+                    <div class="service-icon text-red-500 text-4xl mb-4">
+                        <i class="fas fa-fire-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Cross Fitness</h3>
+                    <p class="text-gray-600">High-intensity functional movement that will challenge you both physically and mentally.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="title-font text-4xl md:text-5xl text-center mb-4">MEMBERSHIP <span class="text-red-500">PLANS</span></h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Choose the plan that fits your fitness goals and budget. Our long-term memberships are designed to support your fitness journey with consistent progress and sustainable results.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Regular Package 1 Month -->
+                <div class="package-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="bg-gray-800 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">REGULAR</h3>
+                        <div class="flex items-end mt-2">
+                            <span class="text-3xl font-bold">₹1,500</span>
+                            <span class="ml-1 mb-1">/ month</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Access to all equipment</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Basic fitness assessment</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>1 free class per week</span>
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <i class="fas fa-times text-red-500 mr-2"></i>
+                                <span>Personal training</span>
+                            </li>
+                        </ul>
+                        <button class="w-full mt-6 bg-gray-800 hover:bg-gray-900 text-white py-2 rounded-lg transition">GET STARTED</button>
+                    </div>
+                </div>
+                
+                <!-- Regular Package 3 Months -->
+                <div class="package-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="bg-red-600 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">REGULAR</h3>
+                        <div class="flex items-end mt-2">
+                            <span class="text-3xl font-bold">₹3,500</span>
+                            <span class="ml-1 mb-1">/ 3 months</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Access to all equipment</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Detailed fitness assessment</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Weekly fitness tracking</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Basic workout plan</span>
+                            </li>
+                        </ul>
+                        <button class="w-full mt-6 bg-red-600 hover:bg-red-700 text-white py-2 rounded-lg transition">GET STARTED</button>
+                    </div>
+                </div>
+                
+                <!-- Total Fitness Package 6 Months -->
+                <div class="package-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300">
+                    <div class="bg-gray-800 text-white py-4 px-6">
+                        <h3 class="text-xl font-bold">TOTAL FITNESS</h3>
+                        <div class="flex items-end mt-2">
+                            <span class="text-3xl font-bold">₹7,000</span>
+                            <span class="ml-1 mb-1">/ 6 months</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Unlimited equipment access</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Personalized workout plan</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Monthly progress assessment</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Fitness goal consultation</span>
+                            </li>
+                        </ul>
+                        <button class="w-full mt-6 bg-gray-800 hover:bg-gray-900 text-white py-2 rounded-lg transition">GET STARTED</button>
+                    </div>
+                </div>
+                
+                <!-- Total Fitness Package 12 Months -->
+                <div class="package-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-300 pulse-animation">
+                    <div class="bg-yellow-500 text-gray-900 py-4 px-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-bold">TOTAL FITNESS</h3>
+                                <div class="flex items-end mt-2">
+                                    <span class="text-3xl font-bold">₹12,000</span>
+                                    <span class="ml-1 mb-1">/ 12 months</span>
+                                </div>
+                            </div>
+                            <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">SPECIAL OFFER</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Unlimited everything</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Premium fitness experience</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Nutrition consultation</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Quarterly body composition analysis</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Long-term fitness planning</span>
+                            </li>
+                        </ul>
+                        <button class="w-full mt-6 bg-yellow-500 hover:bg-yellow-600 text-gray-900 py-2 rounded-lg font-bold transition">GET STARTED</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4 text-center">Why Choose Long-Term Membership?</h3>
+                <p class="text-gray-600 mb-4">Committing to a longer membership plan isn't just about saving money—it's about investing in your long-term health and fitness journey. Our extended plans are designed to support sustainable lifestyle changes and consistent progress toward your goals.</p>
+                <p class="text-gray-600 mb-4">Members who choose our 6 and 12-month plans see significantly better results as they develop consistent habits, overcome plateaus, and build a stronger relationship with our training team. Your fitness journey is a marathon, not a sprint—and we're here to support you every step of the way.</p>
+                
+                <div class="mt-6 p-4 bg-gray-100 rounded-lg border-l-4 border-red-500">
+                    <h4 class="font-bold text-lg mb-2">Personal Training Available</h4>
+                    <p class="text-gray-600">Additionally, you can avail personal training facilities from our expert trainers who have more than five to twelve years of experience. Our trainers will create customized workout plans tailored to your specific goals and fitness level, providing motivation and accountability throughout your fitness journey.</p>
+                    <a href="#contact" class="inline-block mt-3 text-red-600 hover:text-red-700 font-bold">Inquire about personal training →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainer Section (Moved from below) -->
+    
+
+    <!-- Team Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="title-font text-4xl md:text-5xl text-center mb-4">OUR <span class="text-red-500">TEAM</span></h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Meet the dedicated professionals who will guide you on your fitness journey.</p>
+            
+            <div class="flex justify-center mb-12">
+                <div class="w-full md:w-3/4 lg:w-2/3 overflow-hidden rounded-lg shadow-xl transition duration-300 transform hover:scale-105">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipP3tSMZddwdrGceSAmbOOgy-E6DrsscTWLUVMM=s442-k-no" alt="Iron Plus Gym Team" class="w-full h-auto">
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg transition duration-300 transform hover:-translate-y-2">
+                    <h3 class="text-xl font-bold mb-2">Expert Trainers</h3>
+                    <p class="text-gray-600">Our certified trainers bring years of experience and specialized knowledge to help you achieve your fitness goals safely and effectively.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg transition duration-300 transform hover:-translate-y-2">
+                    <h3 class="text-xl font-bold mb-2">Supportive Community</h3>
+                    <p class="text-gray-600">Join a motivating community of like-minded individuals who support and inspire each other on their fitness journeys.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-lg transition duration-300 transform hover:-translate-y-2">
+                    <h3 class="text-xl font-bold mb-2">Personalized Approach</h3>
+                    <p class="text-gray-600">We believe in customized fitness plans that adapt to your unique needs, goals, and progress for optimal results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trainers Showcase -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="title-font text-4xl md:text-5xl text-center mb-4">OUR <span class="text-red-500">TRAINERS</span></h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Expert guidance from certified fitness professionals.</p>
+            
+            <!-- Team Photo -->
+            <div class="mb-12 flex justify-center">
+                <div class="w-full md:w-3/4 lg:w-2/3 overflow-hidden rounded-lg shadow-xl">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipMptPvOqzw1i2VjqHC6F_7qPqZWv6HWRDNJfd0=s528-k-no" alt="Iron Plus Gym Trainers Team" class="w-full h-auto object-cover">
+                </div>
+            </div>
+            
+            <!-- Head Trainer Beeru (already featured above) -->
+            <div class="mb-12 p-6 bg-gray-100 rounded-lg">
+                <h3 class="text-2xl font-bold mb-2 text-center">Our Training Team</h3>
+                <p class="text-center text-gray-600 mb-8">Led by our head trainer Beeru Pal, our team of certified professionals is dedicated to helping you achieve your fitness goals.</p>
+            </div>
+            
+            <!-- Additional Trainers -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Trainer: Yash -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition duration-300 transform hover:scale-105">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Yash</h3>
+                        <p class="text-red-500 font-semibold mb-3">Strength & Cardio Specialist</p>
+                        <p class="text-gray-600 mb-4">Specializes in muscle building, strength training, and high-intensity cardio workouts. Yash helps members achieve their body transformation goals with customized training plans.</p>
+                        <div class="flex space-x-2">
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Strength</span>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Cardio</span>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">HIIT</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trainer: Abhishek -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition duration-300 transform hover:scale-105">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Abhishek</h3>
+                        <p class="text-red-500 font-semibold mb-3">Muscle Training & Dance</p>
+                        <p class="text-gray-600 mb-4">With expertise in both muscle training and dance fitness, Abhishek brings energy and technical knowledge to help members build muscle while having fun.</p>
+                        <div class="flex space-x-2">
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Muscle</span>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Dance</span>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Cardio</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trainer: Vivek -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition duration-300 transform hover:scale-105">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Vivek</h3>
+                        <p class="text-red-500 font-semibold mb-3">Zumba & Dance Instructor</p>
+                        <p class="text-gray-600 mb-4">Vivek brings the joy of movement to our gym with energetic Zumba and dance classes. His sessions combine fun choreography with effective cardio workouts.</p>
+                        <div class="flex space-x-2">
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Zumba</span>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Dance</span>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Aerobics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-12">
+                <div class="bg-gray-100 p-4 rounded-lg text-center transition duration-300 transform hover:scale-105">
+                    <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3 class="font-bold">Strength Training</h3>
+                </div>
+                
+                <div class="bg-gray-100 p-4 rounded-lg text-center transition duration-300 transform hover:scale-105">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3 class="font-bold">Cardio Experts</h3>
+                </div>
+                
+                <div class="bg-gray-100 p-4 rounded-lg text-center transition duration-300 transform hover:scale-105">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="font-bold">Yoga Instructors</h3>
+                </div>
+                
+                <div class="bg-gray-100 p-4 rounded-lg text-center transition duration-300 transform hover:scale-105">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3 class="font-bold">Nutrition Coaches</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="title-font text-4xl md:text-5xl text-center mb-4">WHAT OUR <span class="text-red-500">MEMBERS SAY</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="mb-4">
+                        <h4 class="font-bold">Riya Sharma</h4>
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "I've lost 15kg in 4 months with Beeru's guidance. The Zumba classes are so much fun and the trainers are incredibly supportive!"
+                    </p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="mb-4">
+                        <h4 class="font-bold">Amit Patel</h4>
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "The 12-month package is worth every rupee! My strength has doubled and I've never felt better. The equipment is top-notch."
+                    </p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="mb-4">
+                        <h4 class="font-bold">Priya Singh</h4>
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "The yoga classes have transformed not just my body but my mind too. The instructors are knowledgeable and the atmosphere is welcoming."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="py-12 bg-gray-800 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="title-font text-3xl md:text-4xl mb-4">OUR <span class="text-red-500">LOCATION</span></h2>
+                    <p class="mb-4">
+                        <i class="fas fa-map-marker-alt text-red-500 mr-2"></i>
+                        4/52, Sector 4, Sector 5, Jankipuram Extension, Lucknow, Uttar Pradesh 226031
+                    </p>
+                    <p class="mb-4">
+                        <i class="fas fa-clock text-red-500 mr-2"></i>
+                        Open 24/7 for all members
+                    </p>
+                    <p class="mb-6">
+                        <i class="fas fa-phone-alt text-red-500 mr-2"></i>
+                        +91 7007101185
+                    </p>
+                    <a href="#contact" class="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg font-bold transition">GET DIRECTIONS</a>
+                </div>
+                <div class="w-full md:w-1/2 h-64 md:h-80 bg-gray-600 rounded-lg overflow-hidden">
+                    <!-- Map Placeholder -->
+                    <div class="w-full h-full flex items-center justify-center">
+                        <i class="fas fa-map-marked-alt text-5xl text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="title-font text-4xl md:text-5xl text-center mb-4">GET IN <span class="text-red-500">TOUCH</span></h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">Have questions? Want to schedule a tour? Contact us today!</p>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="w-full md:w-1/2">
+                    <div class="bg-gray-100 p-8 rounded-lg text-center">
+                        <h3 class="text-2xl font-bold mb-6">CALL US NOW</h3>
+                        <a href="tel:+917007101185" class="inline-block bg-red-600 hover:bg-red-700 text-white py-4 px-8 rounded-lg font-bold text-xl transition transform hover:scale-105">
+                            <i class="fas fa-phone-alt mr-2"></i> +91 7007101185
+                        </a>
+                        <p class="mt-6 text-gray-600">Click the button above to call us directly</p>
+                    </div>
+                </div>
+                
+                <div class="w-full md:w-1/2">
+                    <div class="bg-gray-100 p-8 rounded-lg h-full">
+                        <h3 class="text-2xl font-bold mb-4">CONTACT INFO</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-red-500 text-white p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Address</h4>
+                                    <p class="text-gray-600">4/52, Sector 4, Sector 5, Jankipuram Extension, Lucknow, Uttar Pradesh 226031</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-red-500 text-white p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Phone</h4>
+                                    <p class="text-gray-600">+91 7007101185</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-red-500 text-white p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Email</h4>
+                                    <p class="text-gray-600">beerupal2017@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-red-500 text-white p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Hours</h4>
+                                    <p class="text-gray-600">Monday - Friday: 6:00 AM - 10:00 PM</p>
+                                    <p class="text-gray-600">Saturday - Sunday: 7:00 AM - 9:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-dumbbell text-red-500 text-2xl"></i>
+                        <span class="title-font text-2xl">IRON <span class="text-red-500">PULSE</span> GYM</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Transforming lives through fitness since 2010. Join us in our mission to build a healthier community.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">QUICK LINKS</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#packages" class="text-gray-400 hover:text-white transition">Packages</a></li>
+                        <li><a href="#trainer" class="text-gray-400 hover:text-white transition">Trainer</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">SERVICES</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Zumba</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Yoga</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Aerobics</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Self Defense</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Cross Fitness</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">NEWSLETTER</h4>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe to our newsletter for fitness tips, special offers and gym updates.
+                    </p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-900 w-full">
+                        <button class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-r-lg transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="bg-gray-700 hover:bg-gray-600 p-2 rounded-full transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-gray-600 p-2 rounded-full transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-gray-600 p-2 rounded-full transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-gray-600 p-2 rounded-full transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Iron Pulse Gym Fitness. All rights reserved.</p>
+            </div>
+            
+            <!-- Developer Credits - Can be commented out if needed -->
+            <div id="developer-credits" class="border-t border-gray-800 mt-4 pt-4 text-center text-gray-500 text-sm">
+                <p>Website developed by MohdYousuf Parvez | <a href="mailto:mohdyousufparvez@gmail.com" class="hover:text-gray-300">mohdyousufparvez@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="fixed bottom-6 right-6 bg-red-600 text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Get Started Modal -->
+    <div id="get-started-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">Get Started with <span id="selected-plan" class="text-red-500"></span></h3>
+                <button id="close-modal" class="text-gray-500 hover:text-gray-700 text-xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <p class="mb-6">Choose how you'd like to proceed:</p>
+            
+            <div class="space-y-4">
+                <button id="call-now-btn" class="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-bold flex items-center justify-center">
+                    <i class="fas fa-phone-alt mr-2"></i> Call Now: +91 7007101185
+                </button>
+                
+                <button id="schedule-visit-btn" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-bold flex items-center justify-center">
+                    <i class="fas fa-calendar-check mr-2"></i> Schedule a Free Visit
+                </button>
+                
+                <div id="schedule-form" class="hidden space-y-4 mt-4 p-4 bg-gray-100 rounded-lg">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Your Name</label>
+                        <input type="text" class="w-full px-4 py-2 border rounded-lg" placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Phone Number</label>
+                        <input type="tel" class="w-full px-4 py-2 border rounded-lg" placeholder="Enter your phone number">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Preferred Date</label>
+                        <input type="date" class="w-full px-4 py-2 border rounded-lg">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Preferred Time</label>
+                        <select class="w-full px-4 py-2 border rounded-lg">
+                            <option value="">Select a time</option>
+                            <option value="morning">Morning (6AM - 10AM)</option>
+                            <option value="afternoon">Afternoon (10AM - 2PM)</option>
+                            <option value="evening">Evening (2PM - 6PM)</option>
+                            <option value="night">Night (6PM - 10PM)</option>
+                        </select>
+                    </div>
+                    <button id="submit-schedule" class="w-full bg-red-600 hover:bg-red-700 text-white py-2 rounded-lg font-bold">
+                        Submit Request
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple script for mobile menu toggle (would be replaced with React in a real implementation)
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden');
+            const mobileMenu = document.querySelector('.md\\:flex');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                if (mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.remove('hidden');
+                    mobileMenu.classList.add('flex', 'flex-col', 'absolute', 'top-16', 'right-0', 'bg-gray-900', 'w-full', 'p-4', 'space-y-4');
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex', 'flex-col', 'absolute', 'top-16', 'right-0', 'bg-gray-900', 'w-full', 'p-4', 'space-y-4');
+                }
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Special Offer Countdown Timer
+            function initCountdown() {
+                // Check if there's a saved end date in localStorage
+                let endDate = localStorage.getItem('specialOfferEndDate');
+                
+                // If no saved date or the date has passed, set a new 7-day period
+                if (!endDate || new Date(endDate) < new Date()) {
+                    // Set end date to 7 days from now
+                    const now = new Date();
+                    endDate = new Date(now.getTime() + (7 * 24 * 60 * 60 * 1000)).toISOString();
+                    localStorage.setItem('specialOfferEndDate', endDate);
+                }
+                
+                // Update the countdown every second
+                const countdownTimer = setInterval(function() {
+                    const now = new Date().getTime();
+                    const end = new Date(endDate).getTime();
+                    const distance = end - now;
+                    
+                    // Time calculations
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                    // Display the result
+                    document.getElementById("days").textContent = days.toString().padStart(2, '0');
+                    document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+                    document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+                    document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+                    
+                    // If the countdown is finished, reset it
+                    if (distance < 0) {
+                        clearInterval(countdownTimer);
+                        // Reset for another 7 days
+                        initCountdown();
+                    }
+                }, 1000);
+            }
+            
+            // Initialize the countdown
+            initCountdown();
+            
+            // Get Started Modal Functionality
+            const getStartedButtons = document.querySelectorAll('.get-started-btn');
+            const modal = document.getElementById('get-started-modal');
+            const closeModal = document.getElementById('close-modal');
+            const selectedPlan = document.getElementById('selected-plan');
+            const callNowBtn = document.getElementById('call-now-btn');
+            const scheduleVisitBtn = document.getElementById('schedule-visit-btn');
+            const scheduleForm = document.getElementById('schedule-form');
+            const submitSchedule = document.getElementById('submit-schedule');
+            
+            // Open modal when Get Started is clicked
+            getStartedButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const plan = this.getAttribute('data-plan');
+                    selectedPlan.textContent = plan;
+                    modal.classList.remove('hidden');
+                    // Hide schedule form when modal opens
+                    scheduleForm.classList.add('hidden');
+                });
+            });
+            
+            // Close modal
+            closeModal.addEventListener('click', function() {
+                modal.classList.add('hidden');
+            });
+            
+            // Close modal when clicking outside
+            window.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.classList.add('hidden');
+                }
+            });
+            
+            // Call Now button
+            callNowBtn.addEventListener('click', function() {
+                const phoneNumber = '+917007101185';
+                
+                // Try to use tel: protocol (works on mobile)
+                window.location.href = `tel:${phoneNumber}`;
+                
+                // For desktop, copy to clipboard and show message
+                navigator.clipboard.writeText(phoneNumber).then(() => {
+                    alert('Phone number copied to clipboard: ' + phoneNumber);
+                }).catch(err => {
+                    console.error('Could not copy text: ', err);
+                });
+            });
+            
+            // Schedule Visit button
+            scheduleVisitBtn.addEventListener('click', function() {
+                scheduleForm.classList.toggle('hidden');
+            });
+            
+            // Submit Schedule form
+            submitSchedule.addEventListener('click', function() {
+                alert('Thank you! Your visit has been scheduled. We will call you to confirm the details.');
+                modal.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
